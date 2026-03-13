@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: rgba(1, 1, 1, 0.158);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .display {
+  background-color: transparent;
+  border: 3px solid white;
+  width: 50%;
+  display: flex;
+  height: 80px;
+  border-radius: 30px;
+  justify-content: space-between;
+  padding-inline: 20px;
+  font-size: 40px;
+}
+
+main .display .num {
+  align-self: flex-end;
+}
+
+main .button {
+  margin-top: 10px;
+  display: grid;
+  gap: 6px;
+  grid-template-areas:
+    'deg rad xl open close mod ce'
+    'inv sin ln n7 n8 n9 div'
+    'phi cos log n4 n5 n6 mul'
+    'e tan sqrt n1 n2 n3 sub'
+    'ans exp pow n0 dot eq add';
+
+  .deg {
+    grid-area: deg;
+  }
+  .rad {
+    grid-area: rad;
+  }
+  .factorial {
+    grid-area: xl;
+  }
+  .open-bracket {
+    grid-area: open;
+  }
+  .close-bracket {
+    grid-area: close;
+  }
+  .modulo {
+    grid-area: mod;
+  }
+  .clear {
+    grid-area: ce;
+  }
+
+  .inv {
+    grid-area: inv;
+  }
+  .sin {
+    grid-area: sin;
+  }
+  .ln {
+    grid-area: ln;
+  }
+  .seven {
+    grid-area: n7;
+  }
+  .eight {
+    grid-area: n8;
+  }
+  .nine {
+    grid-area: n9;
+  }
+  .divide {
+    grid-area: div;
+  }
+
+  .phi {
+    grid-area: phi;
+  }
+  .cos {
+    grid-area: cos;
+  }
+  .log {
+    grid-area: log;
+  }
+  .four {
+    grid-area: n4;
+  }
+  .five {
+    grid-area: n5;
+  }
+  .six {
+    grid-area: n6;
+  }
+  .multiply {
+    grid-area: mul;
+  }
+
+  .e {
+    grid-area: e;
+  }
+  .tan {
+    grid-area: tan;
+  }
+  .sqrt {
+    grid-area: sqrt;
+  }
+  .one {
+    grid-area: n1;
+  }
+  .two {
+    grid-area: n2;
+  }
+  .three {
+    grid-area: n3;
+  }
+  .subtract {
+    grid-area: sub;
+  }
+
+  .ans {
+    grid-area: ans;
+  }
+  .exp {
+    grid-area: exp;
+  }
+  .pow {
+    grid-area: pow;
+  }
+  .zero {
+    grid-area: n0;
+  }
+  .dot {
+    grid-area: dot;
+  }
+  .equals {
+    grid-area: eq;
+  }
+  .add {
+    grid-area: add;
+  }
+
+  .btn {
+    padding: 20px 34px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    background: rgba(1, 1, 1, 0.358);
+    cursor: pointer;
+    border-radius: 90px;
+    font-size: 14px;
+  }
+  .btn:hover {
+    background: #464646b6;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .button {
+    margin-top: 10px;
+    display: grid;
+    gap: 6px;
+    grid-template-areas:
+      'open close mod ce'
+      'n7 n8 n9 div'
+      'n4 n5 n6 mul'
+      'n1 n2 n3 sub'
+      'n0 dot eq add'
+      'deg rad xl inv'
+      'sin ln phi cos'
+      'log e tan sqrt'
+      'ans exp pow .';
+  }
+  .btn {
+    padding: 10px 24px;
+    border-radius: 2%;
+    border: 1px solid #ccc;
+    background: rgba(1, 1, 1, 0.358);
+    cursor: pointer;
+    border-radius: 90px;
+    font-size: 14px;
+  }
+}
