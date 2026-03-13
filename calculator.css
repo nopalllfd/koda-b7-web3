@@ -37,7 +37,7 @@ main .button {
   display: grid;
   gap: 6px;
   grid-template-areas:
-    'deg rad xl open close mod ce'
+    'deg deg xl open close mod ce'
     'inv sin ln n7 n8 n9 div'
     'phi cos log n4 n5 n6 mul'
     'e tan sqrt n1 n2 n3 sub'
@@ -45,9 +45,6 @@ main .button {
 
   .deg {
     grid-area: deg;
-  }
-  .rad {
-    grid-area: rad;
   }
   .factorial {
     grid-area: xl;
@@ -178,7 +175,7 @@ main .button {
       'n4 n5 n6 mul'
       'n1 n2 n3 sub'
       'n0 dot eq add'
-      'deg rad xl inv'
+      'deg deg xl inv'
       'sin ln phi cos'
       'log e tan sqrt'
       'ans exp pow .';
